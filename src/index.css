@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-print,
+  #app-header,
+  #main-navigation,
+  #app-footer {
+    display: none !important;
+  }
+
+  #printable-requisition-sheet {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+  }
+}

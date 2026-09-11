@@ -1,0 +1,7 @@
+{
+  "name": "Controle de Estoques",
+  "description": "Aplicativo completo de gestão e controle de estoques, movimentações de materiais, requisições com impressão, relatórios e indicadores de desempenho.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
