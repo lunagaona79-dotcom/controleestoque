@@ -35,14 +35,22 @@ export default function App() {
   // Load all initial data
   const loadData = useCallback(async () => {
     try {
-      const [matsData, sectorsData, statsData] = await Promise.all([
+      setLoading(true);
+      const [matsRes, sectorsRes, statsRes] = await Promise.allSettled([
         api.getMaterials(),
         api.getSectors(),
         api.getDashboardStats(),
       ]);
-      setMaterials(matsData);
-      setSectors(sectorsData);
-      setStats(statsData);
+
+      if (matsRes.status === 'fulfilled') {
+        setMaterials(matsRes.value);
+      }
+      if (sectorsRes.status === 'fulfilled') {
+        setSectors(sectorsRes.value);
+      }
+      if (statsRes.status === 'fulfilled') {
+        setStats(statsRes.value);
+      }
     } catch (err) {
       console.error('Erro ao carregar dados do estoque:', err);
     } finally {

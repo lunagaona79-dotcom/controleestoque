@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
             <div className="flex items-center space-x-1.5 px-2.5 py-1 rounded bg-slate-800 border border-slate-700">
               <Database className="w-3.5 h-3.5 text-amber-400" />
-              <span>SQLite Nativo (ACID / WAL)</span>
+              <span>Armazenamento Resiliente & Offline-First</span>
             </div>
             <div className="flex items-center space-x-1.5 px-2.5 py-1 rounded bg-slate-800 border border-slate-700">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />

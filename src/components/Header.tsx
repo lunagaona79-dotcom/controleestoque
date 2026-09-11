@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="hidden md:flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700 text-xs">
               <Database className="w-3.5 h-3.5 text-emerald-400" />
               <span className="text-slate-400">Banco:</span>
-              <span className="text-slate-200 font-medium">Relacional (SQLite)</span>
+              <span className="text-slate-200 font-medium">Persistência Ativa (Online / Local)</span>
             </div>
 
             {/* Best Practices button */}
